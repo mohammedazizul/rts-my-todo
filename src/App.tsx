@@ -29,25 +29,12 @@ function App() {
   ]);
 
   console.log(setTodoData);
-  
+
   return (
     <div className="container">
       <h3 style={{textAlign:"center"}}>my todo</h3>
       <CreateTodo/>
-      <div className="grid-container">
-      {
-        todoData.map((data) => (
-          <TodoCard 
-          key={data.sl} 
-          sl={data.sl} 
-          heading={data.heading} 
-          details={data.details}
-          />
-        ))
-      }
-      </div>
     </div>
-
   );
 }
 

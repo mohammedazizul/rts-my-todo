@@ -17,14 +17,12 @@ code {
   padding-top: 20px;
   display: grid;
   grid-template-columns: auto;
-  border: 5px solid black;
 }
 
 .grid-container {
   padding-top: 20px;
   display: grid;
   grid-template-columns: auto auto;
-  border: 5px solid black;
 }
 .card-create {
   width: 50%;
