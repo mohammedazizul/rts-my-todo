@@ -27,6 +27,9 @@ function App() {
       details: "todo one details"
     }
   ]);
+
+  console.log(setTodoData);
+  
   return (
     <div className="container">
       <h3 style={{textAlign:"center"}}>my todo</h3>
