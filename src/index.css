@@ -19,6 +19,25 @@ code {
   grid-template-columns: auto;
 }
 
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .grid-container {
   padding-top: 20px;
   display: grid;
@@ -26,7 +45,7 @@ code {
 }
 .card-create {
   width: 50%;
-  height: 180px;
+  height: 170px;
   padding: 15px;
   margin-bottom: 10px;
   background-color: #F8F3D4;
@@ -36,10 +55,34 @@ code {
   place-self: center; /*to center the card*/
 }
 
+input[type=submit] {
+  background-color: #005F99;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 16px 32px;
+  font-size: medium;
+  text-decoration: none;
+  margin: 20px 2px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button-remove {
+  background-color: #FF449F;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 8px 16px;
+  font-size: medium;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .card {
   width: 80%;
   height: 180px;
-  margin-top: 10px;
+  margin-top: 5px;
   padding: 10px;
   background-color: #F8F3D4;
   border-radius: 5px;
@@ -50,15 +93,26 @@ code {
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
+.card p {
+  margin: 8px;
+}
 
 @media only screen and (max-width: 600px) {
   .grid-container {
     grid-template-columns: auto;
   }
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
   .card {
-
+    margin-bottom: 10px;
+    height: auto;
   }
   .card-create {
     width: 80%;
+  }
+  input[type=submit] {
+    margin-top: 10px;
   }
 }
