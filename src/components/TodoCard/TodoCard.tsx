@@ -1,12 +1,21 @@
 import React from 'react';
 
-const TodoCard = () => {
+interface ITodoDataProps {
+    sl: number,
+    heading: string,
+    details: string
+}
+
+const TodoCard = (props : ITodoDataProps) => {
+
+    console.log(props);
+
     return (
         <div className="card">
             TodoCard
-            <p>SL:001</p>
-            <p>Todo Heading</p>
-            <p>Todo Details</p>
+            <p>SL: {props.sl}</p>
+            <p>Topic: {props.heading}</p>
+            <p>Details: {props.details}</p>
             <button>Remove</button>
         </div>
     );

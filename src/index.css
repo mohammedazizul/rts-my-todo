@@ -13,6 +13,13 @@ code {
     monospace;
 }
 
+.container {
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: auto;
+  border: 5px solid black;
+}
+
 .grid-container {
   padding-top: 20px;
   display: grid;
@@ -22,7 +29,8 @@ code {
 .card-create {
   width: 50%;
   height: 180px;
-  padding: 10px;
+  padding: 15px;
+  margin-bottom: 10px;
   background-color: #F8F3D4;
   border-radius: 5px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -51,5 +59,8 @@ code {
   }
   .card {
 
+  }
+  .card-create {
+    width: 80%;
   }
 }

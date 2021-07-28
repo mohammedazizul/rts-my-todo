@@ -15,7 +15,7 @@ const CreateTodo = () => {
 
                 <p></p>
                 <label htmlFor="details">Details: </label>
-                <textarea name="" id="details" cols={15} rows={5}></textarea>
+                <textarea name="" id="details" cols={15} rows={2}></textarea>
                 
                 <p></p>
                 <input type="submit" onClick={handleSubmit}/>
